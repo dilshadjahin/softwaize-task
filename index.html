@@ -115,7 +115,92 @@
 
     <footer>
 
+
+
     </footer>
+
+      <!-- JavaScript to create the "Shop Charms & Chains" section -->
+      <script>
+        // Create a style element to hold the CSS
+        const style = document.createElement('style');
+        style.textContent = `
+          .jewelry-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+          }
+          .jewelry-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px;
+            text-align: center;
+          }
+          .jewelry-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            margin-bottom: 10px;
+          }
+          .jewelry-image img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+          .jewelry-title {
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+          }
+        `;
+        document.head.appendChild(style);
+
+        // Create the main container div
+
+        const jewelryContainer = document.createElement('div');
+        jewelryContainer.className = 'jewelry-container';
+
+        // List of items to be added to the container
+        const items = [
+          { imgSrc: './assests/best-sellers.png', title: 'Best Sellers' },
+          { imgSrc: './assests/new.png', title: 'New' },
+          { imgSrc: './assests/nechpeices.png', title: 'Necklaces' },
+          { imgSrc: './assests/rings.png', title: 'Rings' }
+        ];
+
+        // Create item elements and append to the container
+        
+        items.forEach(item => {
+          const itemDiv = document.createElement('div');
+          itemDiv.className = 'jewelry-item';
+
+          const imageDiv = document.createElement('div');
+          imageDiv.className = 'jewelry-image';
+          const img = document.createElement('img');
+          img.src = item.imgSrc;
+          imageDiv.appendChild(img);
+
+          const title = document.createElement('p');
+          title.className = 'jewelry-title';
+          title.textContent = item.title;
+
+          itemDiv.appendChild(imageDiv);
+          itemDiv.appendChild(title);
+          jewelryContainer.appendChild(itemDiv);
+        });
+
+        // Insert the container above the hero section
+        const heroSection = document.querySelector('.hero');
+        heroSection.parentNode.insertBefore(jewelryContainer, heroSection);
+    </script>
 
 </body>
 
