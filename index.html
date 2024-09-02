@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind and daisy ui cdn -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>New</a></li>
+                            <li><a>Shop By</a></li>
+                            <li><a>Best Sellers</a></li>
+                            <li><a>Bridal</a></li>
+                            <li><a>Clearance</a></li>
+
+                        </ul>
+                    </div>
+                    <ul class="menu menu-horizontal  hidden lg:flex px-1">
+                        <li><a>New</a></li>
+                        <li><a>Shop By</a></li>
+
+                        <li><a>Bridal</a></li>
+                        <li><a>Clearance</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center ">
+                    <img src="./assests/jamesmichelle.PNG" alt="">
+
+                </div>
+
+
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Search</a></li>
+                        <li><a>Account</a></li>
+                        <li><a>Cart</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- banner -->
+
+        <div class="hero h-[440px]"
+            style="background-image: url('./assests/banner.PNG'); background-size: cover; background-position: center; background-repeat: no-repeat; ">
+            <div class="hero-overlay bg-opacity-10"></div>
+            <div class="hero-content text-neutral-content lg:ml-[320px] ml-10 text-start">
+                <div class="max-w-md">
+                    <h3 class="text-start md:ml-2">up to</h3>
+                    <h1 class="mb-5 md:text-6xl text-3xl 6">30% OFF SIDEWIDE</h1>
+                    <h3 class="mb-2  ">
+                        30% Off Sidewide | <span class="text-white font-semibold">Code: MEMORIAL30</span>
+                    </h3>
+                    <h3> 20% Off Fine | <span class="text-white font-semibold">Code: FINE30</span> </h3>
+                    <button class=" my-4 bg-white text-black md:w-[240px] w-[180px] md:h-[40px] h-[30px] font-semibold">SHOP THE SALE</button>
+                    <p class="text-black">Excludes Gift Cards, Bridal Bands, Bridal Rings, Swimwear,
+                        Jewelry Sets, Shinery products, Gift Boxes, and Ring Sizers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider -->
+
+        <div class="container mx-auto py-10">
+            <div class="flex justify-center space-x-8">
+                <!-- Necklace Item -->
+                <div class="text-center">
+                    <img src="./assests/nechpeices.png" alt="Necklace" class="w-48 h-48 object-cover mx-auto">
+                    <p class="mt-2 text-lg font-semibold">NECKLACES</p>
+                </div>
+                <!-- Earrings Item -->
+                <div class="text-center">
+                    <img src="./assests//bracelets.png" alt="Earrings" class="w-48 h-48 object-cover mx-auto">
+                    <p class="mt-2 text-lg font-semibold">EARRINGS</p>
+                </div>
+                <!-- Ring Item -->
+                <div class="text-center">
+                    <img src="./assests//ring.png" alt="Ring" class="w-48 h-48 object-cover mx-auto">
+                    <p class="mt-2 text-lg font-semibold">RINGS</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
